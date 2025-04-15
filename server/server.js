@@ -39,7 +39,7 @@ app.get("/",(req,res)=>{
 })
 
 //port
-const PORT = process.env.port||8000;
+const PORT = process.env.PORT||8000;
 
 //error handler
 app.use(errorHandler);
