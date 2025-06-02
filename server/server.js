@@ -9,7 +9,7 @@ const cors = require('cors')
 const app = express()
 
 //cors
-app.use(cors())
+app.use(cors({ allowOrigin:"*" }))
 
 //DB connection
 connectDB()

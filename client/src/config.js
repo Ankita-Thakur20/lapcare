@@ -1,0 +1,1 @@
+export const ApiUrl = "https://lapcare-9hw9.onrender.com"

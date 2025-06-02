@@ -1,4 +1,5 @@
 import axios from "axios"
+import { ApiUrl } from "../../config";
 
 const fetchAllUsers = async(token)=>{
     
@@ -8,7 +9,7 @@ const fetchAllUsers = async(token)=>{
         }
     }
     // console.log(token)
- const response = await axios.get("/api/admin/users",options)
+ const response = await axios.get(`${ApiUrl}/api/admin/users`,options)
  return response.data;
 //  console.log(response.data)
 }
@@ -20,7 +21,7 @@ const fetchAllComplaints = async(token)=>{
         }
     }
     // console.log(token)
- const response = await axios.get("/api/admin/complaints",options)
+ const response = await axios.get(`${ApiUrl}/api/admin/complaints`,options)
  return response.data;
 }
 
